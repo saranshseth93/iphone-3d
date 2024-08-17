@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="py-5 sm:px-10 px-5">
       <div className="screen-max-width">
-        <div className="flex justify-between">
+        <div className="md:flex justify-between sm:flex-col">
           <div>
             <p className="font-semibold text-gray text-xs">
               More ways to shop:{" "}
@@ -30,7 +30,7 @@ const Footer = () => {
                 Saransh Seth
               </a>
             </p>
-            <p className="font-semibold text-gray-200 text-s">
+            <p className="font-semibold text-center md:text-left text-gray-200 text-s">
               For educational purpose only
             </p>
           </div>
@@ -42,7 +42,7 @@ const Footer = () => {
           <p className="font-semibold text-gray text-xs">
             Copright @ 2024 Apple Inc. All rights reserved.
           </p>
-          <div className="flex">
+          <div className="md:flex hidden">
             {footerLinks.map((link, i) => (
               <p key={link} className="font-semibold text-gray text-xs">
                 {link}{" "}
